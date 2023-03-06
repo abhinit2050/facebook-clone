@@ -1,0 +1,75 @@
+@import '../../src/styles/mixins';
+
+.Login{
+    background-color: #f0f2f5;;
+    height:  100vh;
+
+    .Container{
+        @include Container
+    }
+    .top{
+        margin-bottom :  10px ;
+
+        .logo{
+            .logoA{
+                height:  100px;
+                width: 100%;
+            }
+        }
+
+        h5{
+            font-size:  1.5rem;
+            font-weight: lighter;
+            width: 100%;
+            margin:  0 auto;
+        }
+        
+    }
+    .form-wrapper{
+        background-color: #fff;
+        box-shadow: 0px 0px 6px rgba(66,66,66,.37);
+        padding: 10px;
+        .form{
+            display: flex;
+            flex-direction: column;
+            .email-input, 
+            .password-input{
+                    padding: 10px;
+                    font-size: 1rem;
+                    border-width: 0px;
+                    border-color: #CCCCCC;
+                    background-color: #FFFFFF;
+                    color: #000000;
+                    border-style: solid;
+                    border-radius: 6px;
+                    box-shadow: 0px 0px 1px rgba(66,66,66,.37);
+
+                    &:first-child{
+                        margin-bottom: 20px;
+                    }
+            }
+        // LoginButton
+            .loginButton{
+                background-color:  #166fe5;
+                color:  #fff;
+                border:  none;
+                border-radius: 6px;
+                font-size: .9rem;
+                font-weight:  bold;
+                padding:  5px ;
+        &:hover{
+            background-color:  darken(#166fe5, 10);
+        }
+            }
+
+        // divider
+    }
+    .divider{
+        height:  1px;
+        width:  100%;
+        margin:  20px 0 ;
+        background-color: rgba(219, 219, 219, 0.582)
+        ;
+    }
+    }
+}
