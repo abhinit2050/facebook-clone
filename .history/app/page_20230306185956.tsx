@@ -12,5 +12,4 @@ export default function Home() {
 }
 
 
-// TODO: almost done with login page for new user , yet to write style for large screen
-// TODO: after loginPage we move to homepage " all design system based on our suggestion"
+// TODO: almost done with login page for 
