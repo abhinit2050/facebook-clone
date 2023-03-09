@@ -82,7 +82,7 @@
                     position: relative;
                     text-align: center;
                     font-size:  .8rem;
-                    color: $FbBlue;
+                    color: #166fe5 ;
                     
                     &:hover{
                         color: $deepFbBlue;
@@ -97,7 +97,7 @@
                     height:  1px;
                     width:  100%;
                     margin:  20px 0 ;
-                    background-color: $divider;
+                    background-color: rgba(219, 219, 219, 0.582)
                     ;
                 }
 
@@ -109,7 +109,7 @@
                     padding:  10px 15px;
                     
                     &:hover{
-                        background-color:  $deepFbGreen;
+                        background-color:  darken(#36a420, 10);
                     }
      }
     }

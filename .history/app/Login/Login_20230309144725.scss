@@ -97,7 +97,7 @@
                     height:  1px;
                     width:  100%;
                     margin:  20px 0 ;
-                    background-color: $divider;
+                    background-color: $
                     ;
                 }
 
@@ -109,7 +109,7 @@
                     padding:  10px 15px;
                     
                     &:hover{
-                        background-color:  $deepFbGreen;
+                        background-color:  darken(#36a420, 10);
                     }
      }
     }
