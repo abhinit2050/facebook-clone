@@ -1,9 +1,19 @@
 
 @import '/src/styles/colors';
 @import '/src/styles/constants';
-@import '/src/styles/mixins';
+@import '/src/styles/constants';
+@import '../../src/styles/mixins';
 
 // constants
+.input{
+    position: relative;
+    color:  $white;
+    border:  none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight:  bold;
+    cursor: pointer;
+}
 
 
 
@@ -101,7 +111,7 @@
         .loginButton{
                 margin: 20px 0 10px 0;
                 padding:  8px 0;
-                @extend inputStyle;
+                @extend .input;
                 
             }
             
@@ -137,7 +147,7 @@
             justify-content: center;
              .CreateAccount{
                  background-color:  #36a420;
-                 @extend inputStyle;
+                 @extend .input;
                  padding:  10px 15px;
                  
                  &:hover{

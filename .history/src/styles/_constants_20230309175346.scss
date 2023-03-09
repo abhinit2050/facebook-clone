@@ -4,7 +4,7 @@
 
 
 
-inputStyle{
+{
     position: relative;
     color:  $white;
     border:  none;
@@ -13,7 +13,8 @@ inputStyle{
     font-weight:  bold;
     cursor: pointer;
 }
-loginStyle{
+
+.loginStyle{
     background-color:  $FbBlue;
     color: $white;
     &:hover{
