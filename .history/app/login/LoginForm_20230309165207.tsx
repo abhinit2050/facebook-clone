@@ -1,8 +1,10 @@
 import Link from "next/link";
 
 type LoginFormProps = {
-  handleSubmit : any     
+  handleSubmit : any
  }
+
+
 
 export const LoginForm = ({handleSubmit} : LoginFormProps) =>  {
       return (
