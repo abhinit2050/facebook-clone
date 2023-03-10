@@ -1,0 +1,172 @@
+
+@import '../../src/styles/colors';
+@import '../../src/styles/mixins';
+
+// constants
+.input{
+    position: relative;
+    color:  $white;
+    border:  none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight:  bold;
+    cursor: pointer;
+}
+
+
+
+.Login{
+    background-color:  $SmokeWhite;
+    height:  100vh;
+
+    .Container{
+        @include Container;
+        @media (min-width: 769px) and (max-width: 3000px) {
+      
+        }
+        .wrapper{
+            @media (min-width: 769px) and (max-width: 3000px) {
+                position: relative;
+                height:  inherit;
+                width:  100%;
+                display: flex; 
+                justify-content: space-between;
+                align-items: center;
+                padding:  0 10px 0 10px;
+                transform:  translateY(-20px);
+        }
+        }
+    }
+    .top-left{
+        margin-bottom :  10px ;
+        @media (min-width: 769px) and (max-width: 3000px){
+            margin-bottom: 0 !important;
+            width: 40%;
+        }
+
+        .logo{
+            .logoA{
+                height:  100px;
+                width: 100%;
+                @media (min-width: 769px) and (max-width: 3000px){
+                    display: flex;
+                    align-items:  start;
+                    width:  inherit;
+                    margin-left: -30px;
+                   
+                }
+            }
+        }
+
+        h5{
+            font-size:  1.4rem;
+            font-weight: lighter;
+            width: 100%;
+            margin:  0 auto;
+            @media (min-width: 769px) and (max-width: 3000px){
+                font-weight:  normal;
+                font-size:  1.6rem;
+            }
+        }
+        
+    }
+
+    .bottom-right{
+        @media (min-width: 769px) and (max-width: 3000px){
+            width:  40% ;
+        }
+        .form-wrapper{
+        
+            background-color: $white;
+            box-shadow: 0px 0px 6px rgba(66,66,66,.37);
+            padding: 10px;
+
+            @media (min-width: 769px) and (max-width: 3000px){
+                width:  90% ;
+                padding: 20px;
+            }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            .email-input, 
+            .password-input{
+                padding: 10px;
+                font-size: 1rem;
+                border-width: 0px;
+                border-color: $deepSmokeWhite;
+                    background-color: $white;
+                    color:  $black;
+                    border-style: solid;
+                    border-radius: 6px;
+                    box-shadow: 0px 0px 1px rgba(66,66,66,.37);
+                    
+                    &:first-child{
+                        margin-bottom: 20px;
+                    }
+            }
+        // LoginButton
+        .loginButton{
+                background-color:  $FbBlue;
+                margin: 20px 0 10px 0;
+                padding:  8px 0;
+                @extend .input;
+                
+                &:hover{
+                    background-color:  $deepFbBlue;
+                }
+            }
+            
+        }
+                .forgottenPassword{
+                    position: relative;
+                    text-align: center;
+                    font-size:  .8rem;
+                    color: $FbBlue;
+                    
+                    &:hover{
+                        color: $deepFbBlue;
+                        text-decoration: underline;
+                    }
+                }
+                
+                // Forgotten Password
+                // divider
+                .divider{
+                    height:  1px;
+                    width:  100%;
+                    margin:  20px 0 ;
+                    background-color: $divider;
+                    ;
+                }
+
+        // CreateAccountButton
+         .createButton{
+            position: relative;
+            width: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+             .CreateAccount{
+                 background-color:  #36a420;
+                 @extend .input;
+                 padding:  10px 15px;
+                 
+                 &:hover{
+                     background-color:  $deepFbGreen;
+                    }
+                }
+        }  
+
+        .celebBtn{
+            font-size:  .9rem;
+            .toCelebPage{
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+
+
+}

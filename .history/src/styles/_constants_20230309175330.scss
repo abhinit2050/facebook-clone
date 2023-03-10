@@ -1,0 +1,23 @@
+// for some styling that can be extended and to different 
+// example: Log in button style  for different files are the same 
+@import './colors';
+
+
+
+.input{
+    position: relative;
+    color:  $white;
+    border:  none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight:  bold;
+    cursor: pointer;
+}
+
+.loginStyle{
+    background-color:  $FbBlue;
+    color: $white;
+    &:hover{
+        background-color:  $deepFbBlue;
+    }
+}

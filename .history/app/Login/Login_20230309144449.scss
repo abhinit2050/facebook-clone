@@ -1,0 +1,116 @@
+
+@import '../../src/styles/colors';
+@import '../../src/styles/mixins';
+
+// constants
+.input{
+    position: relative;
+    color:  $white;
+    border:  none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight:  bold;
+    cursor: pointer;
+}
+
+
+
+.Login{
+    background-color:  $SmokeWhite;
+    height:  100vh;
+
+    .Container{
+        @include Container
+    }
+    .top-left{
+        margin-bottom :  10px ;
+
+        .logo{
+            .logoA{
+                height:  100px;
+                width: 100%;
+            }
+        }
+
+        h5{
+            font-size:  1.5rem;
+            font-weight: lighter;
+            width: 100%;
+            margin:  0 auto;
+        }
+        
+    }
+
+    .bottom-right{
+        .form-wrapper{
+            background-color: $white;
+            box-shadow: 0px 0px 6px rgba(66,66,66,.37);
+            padding: 10px;
+        .form{
+            display: flex;
+            flex-direction: column;
+            .email-input, 
+            .password-input{
+                padding: 10px;
+                font-size: 1rem;
+                border-width: 0px;
+                border-color: $deepSmokeWhite;
+                    background-color: $white;
+                    color:  $black;
+                    border-style: solid;
+                    border-radius: 6px;
+                    box-shadow: 0px 0px 1px rgba(66,66,66,.37);
+                    
+                    &:first-child{
+                        margin-bottom: 20px;
+                    }
+            }
+        // LoginButton
+        .loginButton{
+                background-color:  #166fe5;
+                margin: 20px 0 10px 0;
+                padding:  8px 0;
+                @extend .input;
+                
+                &:hover{
+                    background-color:  darken(#166fe5, 10);
+                }
+            }
+            
+        }
+                .forgottenPassword{
+                    position: relative;
+                    text-align: center;
+                    font-size:  .8rem;
+                    color: #166fe5 ;
+                    
+                    &:hover{
+                        color: darken(#166fe5, 30);
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+                // Forgotten Password
+                // divider
+                .divider{
+                    height:  1px;
+                    width:  100%;
+                    margin:  20px 0 ;
+                    background-color: rgba(219, 219, 219, 0.582)
+                    ;
+                }
+
+                // CreateAccount
+
+                .CreateAccount{
+                    background-color:  #36a420;
+                    @extend .input;
+                    padding:  10px 15px;
+                    
+                    &:hover{
+                        background-color:  darken(#36a420, 10);
+                    }
+     }
+    }
+}

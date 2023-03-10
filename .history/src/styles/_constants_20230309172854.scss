@@ -1,0 +1,10 @@
+// for some styling that can be extended and to diffrent 
+// example: Log in button style  for different files are the same 
+@imp
+.loginStyle{
+    background-color:  $FbBlue;
+color:  ;
+    &:hover{
+        background-color:  $deepFbBlue;
+    }
+}
