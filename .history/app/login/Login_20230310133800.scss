@@ -1,6 +1,6 @@
 
 @import '/src/styles/colors';
-@import '/src/styles/constants';
+// @import '/src/styles/constants';
 @import '/src/styles/mixins';
 
 // constants
@@ -40,9 +40,10 @@
                 width: 100%;
                 @media (min-width: 769px) and (max-width: 3000px){
                     display: flex;
-                    align-items:  flex-start;
+                    align-items:  start;
                     width:  inherit;
                     margin-left: -30px;
+                   
                 }
             }
         }
